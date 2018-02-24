@@ -12,6 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 /**
  * Created by Jason on 2018/1/29.
  */
+
+//test
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class DemoServiceTest {
