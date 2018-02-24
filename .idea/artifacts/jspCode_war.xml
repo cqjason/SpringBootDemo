@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jspCode:war">
+    <output-path>$PROJECT_DIR$/jspCode/target</output-path>
+    <root id="archive" name="jspCode-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="jspCode:war exploded" />
+    </root>
+  </artifact>
+</component>
