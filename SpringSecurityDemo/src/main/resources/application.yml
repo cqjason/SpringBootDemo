@@ -1,0 +1,11 @@
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    template-resolver-order:
+  data:
+    mongodb:
+      host: 192.168.40.82
+      port: 23107
+      database: test
+      username: test
+      password: "123456"

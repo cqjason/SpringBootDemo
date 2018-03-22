@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jason's web</title>
+    <title>Header</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -14,30 +14,28 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/header.css" type="text/css" rel="stylesheet">
-    <link href="css/foot.css" type="text/css" rel="stylesheet">
     <link href="css/mystyle.css" type="text/css" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="container-fluid">
-    <div class="header" th:replace="fragments/header::header"></div>
-    <div class="row">
+    <div class="row" th:fragment="header">
         <div class="col-md-12">
-            <div class="jumbotron">
-                <h2>
-                    Hello, world!
-                </h2>
-                <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
-                </p>
+            <div class="my-header total-heigth">
+                <div class="authorize-login">
+                    <div class="authorize" sec:authorize="isAuthenticated()">
+                        <a class="login" href="#">UserName:<span sec:authentication="name"></span> |</a>
+                        <a class="login" href="#"> Logout</a>
+                    </div>
+                    <div class="unauthorized" sec:authorize="isAnonymous()">
+                            <a class="login" href="/login">Register |</a>
+                            <a class="login" href="#"> Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footder" th:replace="fragments/footer::footer"></div>
 </div>
 
 <script src="js/jquery.min.js"></script>

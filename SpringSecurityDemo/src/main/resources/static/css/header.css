@@ -1,0 +1,14 @@
+.my-header
+{
+    background-color: #5cb3fd;
+}
+.authorize-login{
+    position: relative;
+    right: 10%;
+    float: right;
+    padding: 0.5rem;
+}
+.authorize-login a{color: black}
+.authorize-login a:hover{color: #bd4147;text-decoration: none}
+
+
